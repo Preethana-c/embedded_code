@@ -24,3 +24,7 @@ jobs:
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          direct_prompt: |
+            Review this pull request for bugs, memory leaks, 
+            buffer overflows, security issues and off by one errors. 
+            Post inline comments on the specific lines with issues.
