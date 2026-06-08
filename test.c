@@ -16,12 +16,13 @@ int* create_array(int size) {
         arr[i] = i * 2;
     }
     return arr;  // caller never frees this
-}
- 
+}//testing PR
+
 // Bug 3: integer overflow
 int multiply(int a, int b) {
     return a * b;  // no overflow check
 }
+
  
 // Bug 4: null pointer not checked
 void print_array(int* arr, int size) {
